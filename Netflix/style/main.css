@@ -1,0 +1,110 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .logo, header .nav-main, .principal, .principal .titulo, .botao  {
+    display: none;
+}
+
+/* Elementos base */
+
+body {
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/assets/mobile-fundo.jpg') no-repeat;
+    background-size: 100%;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: .5rem;
+}
+
+header .logo-mobile img {
+    width: 2rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* principal */
+
+.botao-mobile {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    font-size: .5rem;
+
+    padding: 5px 15px;
+    margin-top: 420px;
+    margin-left: 1rem;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao-mobile:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i, .botao-invertido {
+    margin-right: 8px;
+}
+
+.botao-invertido {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: black;
+    font-size: .5rem;
+
+    padding: 5px 15px;
+    margin-left: 1rem;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao-invertido:hover {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.principal .container {
+    width: 40%;
+}
+
+
+.carrosel-filmes {
+    margin-top: 10%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}

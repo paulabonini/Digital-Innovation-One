@@ -1,0 +1,73 @@
+@media screen and (min-width: 600px) {
+    header .logo-mobile, header .nav-mobile, .botao-invertido, .botao-mobile {
+        display: none;
+    }
+
+   
+    body {
+    background: var(--preta);
+    }
+
+    header .container {
+       justify-content: space-between;
+    } 
+
+    header .logo {
+        margin-left: 5px;
+        display: block;
+    }
+
+    header .nav-main {
+        display: inline;
+    }
+
+    .principal {
+        font-size: 16px;
+        background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/assets/imagem-fundo.jpg');
+        background-size: cover;
+        
+    
+        height: 400px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .principal .titulo {
+        display: block;
+        margin-top: 15%;
+        font-size: 40px;
+    }
+
+    .principal .descricao {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        text-align: justify;
+    }
+
+    .botao {
+        display: inline;
+        background-color: rgba(0,0,0,.50);
+        border: none;
+        color: white;
+        font-size: .7rem;
+    
+        padding: 10px 15px;
+        margin-right: 10px;
+           
+        cursor: pointer;
+        transition: .3s ease all;
+    }
+    
+    .botao:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .carrosel-filmes {
+        margin-top: 3%;
+    }
+
+}
